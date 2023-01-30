@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript para datas - 11º Exemplo</title>
+        <script>
+            //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Date
+            //https://www.w3schools.com/js/js_date_methods.asp
+            //recupera a data atual do Computador
+            //documentação sobre a classe Date : https://www.w3schools.com/jsref/jsref_obj_date.asp
+            
+            //criacao/declaracao da variavel data_atual
+            //essa variavel é inicalizada com uma instancia
+            //da classe Date
+            //essa instância conterá a data atual.
+            var data_atual = new Date();
+
+            var hora_formatada = data_atual.getHours() +
+                                 " - " + 
+                                 data_atual.getMinutes()+ 
+                                 " - " + 
+                                 data_atual.getSeconds();                   
+            var v1 = 15;
+            var v2 = 16;
+            var v3 = v1 + " " + v2;
+
+        </script>
+    </head>
+    <body>
+        <p>            
+            Impressão do conteúdo da variavel hora_formatada:
+            <script>document.write(hora_formatada)</script>
+        </p>
+        <p>            
+            Impressão do conteúdo da variavel v3:
+            <script>document.write(v3)</script>
+        </p>      
+
+        <p> 
+            Data atual (estática): 08/06/2022
+        </p>
+
+        <p>
+            <script>document.write(data_atual)</script>
+        </p>
+
+        <p>
+            <script>document.write(hora_formatada)</script>
+        </p>
+
+    </body>
+</html>    
