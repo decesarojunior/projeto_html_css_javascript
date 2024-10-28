@@ -80,7 +80,7 @@
 
                     <div class="boxmodel_group">                    
                         <label id="lblDTNascimento" for="dtNascimento" style="font-weight: bold;">Data de Nascimento:<label><br>
-                        <input id="dtNascimento" type="text" name="dtnascimento">
+                        <input id="dtNascimento" type="date" name="dtnascimento">
                     </div>
 
                     
@@ -121,13 +121,13 @@
 
         $("#btnSalvar").click(function(){
 
-            var nome = documento.getElementById("idNome").value;
+            var nome = document.getElementById("idNome").value;
 
             var cpf = document.getElementById("idCPF").value;
 
             var dtNascimento = document.getElementById("dtNascimento").value;
 
-            alert("Nome: "+nome+"\nCPF: "+cpf);
+            alert("Nome: "+nome+"\nCPF: "+cpf+"\nData de Nascimento: "+dtNascimento);
 
         });
 

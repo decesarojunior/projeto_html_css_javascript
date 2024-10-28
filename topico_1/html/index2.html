@@ -49,14 +49,20 @@
 
             <p>O elemento HTML &lt;p&gt; representa um parágrafo. Em mídias visuais, parágrafos são representados como blocos indentados de texto com a primeira letra 
                 avançada e separados por linhas em branco. Já em HTML, parágrafos são usados para agrupar conteúdos relacionados de qualquer tipo, como imagens e 
-                campos de um formulário. Mais informações: <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/p">aqui</a></p>
+                campos de um formulário. Mais informações: 
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/p">
+                    aqui
+                </a>
+            </p>
                 
                 
             <p>Atributo <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/style">style</a>:</p>
 
-            <p style="text-indent: 30ch;">Parágrafos separados por linhas em branco são mais legíveis. Porém, também podemos distinguir parágrafos indentando suas primeiras linhas.
-                Uma abordagem que ocupa menos espaço e é usada para economizar papel quando impresso.</p>
-
+            <p style="text-indent: 5ch; font-family: Verdana, Geneva, Tahoma, sans-serif;font-weight: bolder;">Parágrafos separados por linhas em branco são mais legíveis. Porém, também podemos distinguir parágrafos indentando suas primeiras linhas.
+                Uma abordagem que ocupa menos espaço e é <br>usada para economizar <br>papel quando impresso.</p>
+            <br>
+            <br>
+            <br>
             <p style="color:rgb(223, 18, 56);">Em textos que serão editados, como trabalhos escolares e 
                 rascunhos, usamos tanto as linhas em branco quanto a indentação para distinguirmos cada 
                 parágrafo.</p>
@@ -108,7 +114,7 @@
                 <tr>
                     <td style="border:1px solid">Atributo/estilização:</td>
                     <td style="border:1px solid">Significado/Valores:</td>
-                    <td style="border:1px solid">Comandos:</td> 
+                    <td style="border:1px solid" rowspan="4">Comandos:</td> 
                 </tr>
                 <tr>
                     <td style="border:1px solid">width</td>
@@ -127,6 +133,33 @@
                 </tr>  
 
             </table>
+
+            <br>
+
+            <table style="border: 2px; border-style: solid;">
+
+                <tr>
+                    <td style="border: 1px; border-style: solid; text-align: center;" colspan="3">célula 1</td>
+                </tr>
+                <tr>
+                    <td>célula 2</td>
+                    <td>célula 3</td>
+                    <td>célula 4</td>
+                </tr>
+
+            </table>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
             <li>&lt;tr&gt;</li> 
@@ -148,6 +181,8 @@
 
             <a href="tel:+123456789">Phone</a>
 
+            https://inf.passofundo.ifsul.edu.br/images/logo.png
+
             <!-- (path) caminho relativo-->
             <img src="./imagens/bike.jpg">
 
@@ -167,6 +202,10 @@
                 <a href="./imagens/bike.jpg" target="_self">Imagem da Bike - target Self</a>
 
                 <a href="./imagens/bike.jpg" target="_blank">Imagem da Bike - target Blank</a>
+
+                <!-- renderizar o boxmodel_exemple.png de forma relativa -->
+
+                <img src="../../topico_2/forms_estilizacao/imagens/boxmodel_exemple.png" alt="">
                     
             <li>&lt;span&gt;</li> 
 
@@ -189,14 +228,19 @@
             <li>&lt;li&gt;</li> 
 
             <li>&lt;select&gt;</li>
-
+            <!-- Exercícios:
+             1) Inclua mais duas opções
+             2) Pré-selecione a opção PR
+             3) Pesquisa e implemente um novo select para múltiplas seleções. 
+            -->
             <p>O elemento &lt;select&gt; conhecido como <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/select">caixa de seleção</a> representa um controle que apresenta um menu de opções. As opções dentro do menu são representadas pelo elemento &lt;option&gt;, que podem ser agrupados por elementos &lt;optgroup&gt;. As opções podem ser pré-selecionadas para o usuário. Atributos: required, disabled.</p>              
-                <select name="estado" id="iEstado">
+                <select name="estado" id="iEstado" multiple size="5">
                     <option selected disabled>Selecione</option>  
                     <option >SC</option>  
                     <option >RS</option>                    
                     <option >PR</option>
-                </select>            
+                    <option id="" value="">SP</option>
+                </select>           
 
         </ul>
 
